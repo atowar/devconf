@@ -101,3 +101,62 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 .hero-cta { margin-top: 40px; padding: 14px 30px; font-size: 1rem; }
+
+
+/*Sections */
+.section { padding-block: 88px; }
+
+.section-heading {
+  text-align: center;
+  font-size: clamp(1.9rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+.section-subtitle {
+  text-align: center;
+  margin-top: 10px;
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* Speakers */
+.speakers-grid {
+  margin-top: 52px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.speaker-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+
+}
+
+.speaker-card-photo {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.speaker-card-body { padding: 20px 22px 24px; }
+.speaker-card-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+.speaker-card-name {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+.speaker-card-title {
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 0.92rem;
+}
