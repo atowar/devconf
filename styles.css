@@ -64,3 +64,40 @@ ul { list-style: none; }
 }
 .navbar-menu a:hover { color: #2563eb; }
 
+/*Hero*/
+
+.hero {
+  position: relative;
+  background: url("./images/banner.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.72), rgba(2, 6, 23, 0.78));
+}
+.hero-content {
+  position: relative;
+  padding-block: 96px 104px;
+  max-width: 760px;
+}
+.hero-title {
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+.hero-title em {
+  font-style: italic;
+  font-weight: 800;
+}
+.hero-text {
+  margin: 22px auto 0;
+  max-width: 560px;
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+.hero-cta { margin-top: 40px; padding: 14px 30px; font-size: 1rem; }
