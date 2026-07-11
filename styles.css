@@ -33,7 +33,19 @@ ul { list-style: none; }
 .btn-primary { background: #2563eb; color: #fff; }
 .btn-primary:hover { background: #1d4ed8; }
 
+.btn-outline {
+  background: #fff;
+  color: #2563eb;
+  border-color: #2563eb;
+}
+.btn-outline:hover { background: #eff4ff; }
 
+.btn-dark {
+  background: #fff;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+.btn-dark:hover { background: #f8fafc; }
 /* Navbar */
 .navbar {
   position: sticky;
@@ -160,3 +172,78 @@ ul { list-style: none; }
   color: #64748b;
   font-size: 0.92rem;
 }
+/* Pricing */
+.pricing { background: #f8fafc; }
+.pricing-grid {
+  margin-top: 52px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+.price-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 30px 28px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+.price-card-featured {
+  background: #0f172a;
+  border-color: #0f172a;
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
+}
+.price-card-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+.price-card-featured .price-card-label { color: #93b4ff; }
+
+.price-card-price {
+  margin-top: 10px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+.price-card-featured .price-card-price { color: #fff; }
+
+.price-card-period {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+.price-card-featured .price-card-period { color: #94a3b8; }
+
+.price-card-features {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  flex: 1;
+}
+.price-card-features li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.92rem;
+  color: #1e293b;
+}
+.price-card-features li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+.price-card-featured .price-card-features li { color: #dbe4f3; }
+.price-card-featured .price-card-features li::before { background: #93b4ff; }
+
+.price-card-btn { margin-top: 28px; width: 100%; }
